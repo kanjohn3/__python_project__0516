@@ -33,5 +33,5 @@ if __name__ == "__main__":
         guess_number_game()
         again = input("\n要再玩一次嗎？(y/n)：").strip().lower()
         if again != "y":
-            print("感謝遊玩，掰掰！")
+            print("感謝遊玩，再見！")
             break
