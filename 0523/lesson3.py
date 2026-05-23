@@ -21,3 +21,5 @@ while True:
         print(f"恭喜猜對了！答案是 {answer}")
         print(f"你總共猜了 {count} 次")
         break
+    
+print("遊戲結束！")
