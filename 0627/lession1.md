@@ -1,0 +1,44 @@
+## 純註解半成品(依註解寫程式)
+
+```
+# 步驟 1:匯入 numpy,並取別名 np
+import numpy as np
+
+# 步驟 2:匯入 matplotlib.pyplot,並取別名 plt
+import matplotlib.pyplot as plt
+
+# 步驟 3:用 np.arange() 產生 0 到 4(不含 4)、間隔 0.2 的陣列,存入 x
+x = np.arange(0, 4, 0.2)
+
+# 步驟 4:計算 y1 = cos(pi * x)(用 np.cos 與 np.pi)
+y1 = np.cos(np.pi * x)
+
+# 步驟 5:計算 y2 = cos(2 * pi * x)
+y2 = np.cos(2 * np.pi * x)
+
+# 步驟 6:用 subplot 把版面切成 1 列 2 欄,選第 1 格(左圖)
+plt.subplot(1, 2, 1)
+
+# 步驟 7:畫出 x 與 y1,使用綠色實線
+plt.plot(x, y1, 'g-')
+
+# 步驟 8:用 subplot 選第 2 格(右圖)
+plt.subplot(1, 2, 2)
+
+# 步驟 9:畫出 x 與 y2,使用洋紅色點線
+plt.plot(x, y2, 'm:')
+
+# 步驟 10:顯示圖形
+plt.show()
+```
+
+### 延伸挑戰題
+## 題目
+把版面改成 2 列 2 欄(共 4 格),在四個子圖分別畫出:sin(πx)、cos(πx)、sin(2πx)、cos(2πx),每個子圖用不同顏色與線條樣式,並用 plt.title() 為每個子圖加上標題。
+
+提示
+subplot(221)、subplot(222)、subplot(223)、subplot(224) 分別對應哪一格?
+同一個 x 陣列可以重複使用,只要換不同的 numpy 運算式即可
+標題要在「選到該子圖之後、畫下一個子圖之前」設定
+
+
