@@ -1,0 +1,5 @@
+twstock
+yfinance
+pandas
+numpy
+matplotlib
